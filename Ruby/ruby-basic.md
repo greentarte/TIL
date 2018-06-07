@@ -190,9 +190,39 @@ b = '#{name}님 안녕하세요'
 puts b # => #{name}님 안녕하세요
 ```
 
+> Ruby version에 맞는 문서를 참고해야 정확함
+
+```ruby
+my_name = "oh chang hee"
+my_name.upcase # => "OH CHANG HEE"
+my_name # => "oh chang hee"
+my_name.upcase! # => "OH CHANG HEE"
+my_name # => "OH CHANG HEE"
+```
 
 
 
+#### 11. Hash
 
+- key, value로 이루어져 있다!!!!!!!!!!
 
+```ruby
+hash1 = { :key => value }
+hash2 = { key: value }
+hash3 = { "key" => value }
+```
+
+- each 반복하기
+
+- ```ruby
+  hash1.each do |k, v|                                   
+      # k, v는 어떠한 문자로 적어도 됩니다.
+  	puts "#{k} : #{v}"
+  end  
+  # name : 5chang2
+  # age : 27
+  # hometown : ko
+  ```
+
+> https://gist.github.com/nacyot/7624036 알아두면 좋은 55가지 루비기법
 
